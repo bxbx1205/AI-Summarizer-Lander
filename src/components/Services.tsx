@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
+
 
 interface ServiceProps {
   title: string;
@@ -10,28 +10,28 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Integration Options",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Connect effortlessly with platforms like Google Drive, Microsoft Office, and Dropbox, allowing easy document uploads for summarization.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Summary Quality Feedback",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Get user feedback on generated summaries to continuously improve the AI's accuracy and relevance for various document types..",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Data Security & Privacy",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Your documents are processed securely with encryption, ensuring privacy and compliance with data protection regulations like GDPR.",
     icon: <MagnifierIcon />,
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section className="container py-24 sm:py-12">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -66,7 +66,7 @@ export const Services = () => {
         </div>
 
         <img
-          src={cubeLeg}
+          src="https://cdn.discordapp.com/attachments/1341687232855146565/1341977490519883796/SemiColonError_8.png?ex=67b7f56e&is=67b6a3ee&hm=1a23a6e8b7751b4e46e50f68cf0d3d6541484ebe3ad28301f76e182f2824607c&"
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
           alt="About services"
         />

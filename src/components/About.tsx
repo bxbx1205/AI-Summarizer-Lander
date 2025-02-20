@@ -1,16 +1,16 @@
 import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
+
 
 export const About = () => {
   return (
-    <section
+    <section 
       id="about"
-      className="container py-24 sm:py-32"
+      className="container py-24 sm:py-32 pt-0 pb-20"
     >
       <div className="bg-muted/50 border rounded-lg py-12">
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
-            src={pilot}
+            src={"https://cdn.discordapp.com/attachments/1341687232855146565/1341709124139876422/SemiColonError_3.png?ex=67b6fb7e&is=67b5a9fe&hm=9b7ee48b674e115ed214f947791cf92793ab7d44016a2f7e33005bf8bf90816d&"}
             alt=""
             className="w-[300px] object-contain rounded-lg"
           />
@@ -20,14 +20,10 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                Project
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+              This project is an AI-powered tool designed to generate concise and accurate summaries from lengthy documents such as research papers, legal contracts, and news articles. It preserves essential information and context, while adapting to various domains like healthcare, finance, and education. The tool offers customizable summary lengths and supports multiple formats, making it easier for users to quickly extract key insights and save time when dealing with large amounts of information.
               </p>
             </div>
 

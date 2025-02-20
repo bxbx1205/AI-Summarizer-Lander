@@ -22,38 +22,35 @@ export const HeroCards = () => {
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://github.com/shadcn.png"
+              src="https://upload.wikimedia.org/wikipedia/en/3/34/Jimmy_McGill_BCS_S3.png"
             />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Saul Goodman</CardTitle>
+            <CardDescription>@saulgoodman</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>I summarize my files from here too!</CardContent>
       </Card>
 
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
+            src="https://cdn.discordapp.com/attachments/1341687232855146565/1341706293492191232/SemiColonError_1.png?ex=67b6f8dc&is=67b5a75c&hm=c2308894cad530a5ac1c89498ec3805065321b96ca5c134a7a0be80fda8b464b&"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
-          <CardDescription className="font-normal text-primary">
-            Frontend Developer
-          </CardDescription>
+          <CardTitle className="text-center">SemiColonError</CardTitle>
+         
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
+          We thrive on bringing ideas to life through innovative software solutions that go beyond expectations.
           </p>
         </CardContent>
 
@@ -113,32 +110,25 @@ export const HeroCards = () => {
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
-              Most popular
-            </Badge>
+            
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">Rs.0</span>
+            
           </div>
 
-          <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
-          </CardDescription>
+            <CardDescription>
+            Try our platform for free and experience enhanced efficiency across all features. No commitments required.
+            </CardDescription>
         </CardHeader>
 
-        <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
-        </CardContent>
+      
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["Summarize Anything", "Reliable", "Efficient"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
@@ -154,7 +144,8 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+       
+      <Card className="absolute w-[350px] -right-[10px] bottom-[35px] marginy-10 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
@@ -162,8 +153,7 @@ export const HeroCards = () => {
           <div>
             <CardTitle>Light & dark mode</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+            Light mode makes you feel like you're living in a bright future, while dark mode feels like you're hiding from it.
             </CardDescription>
           </div>
         </CardHeader>

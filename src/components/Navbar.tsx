@@ -16,7 +16,8 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+// Removed unused import
+// import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -29,14 +30,6 @@ const routeList: RouteProps[] = [
     label: "Features",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
     href: "#faq",
     label: "FAQ",
   },
@@ -46,19 +39,23 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+      <NavigationMenu className="mx-auto"></NavigationMenu>
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
-            <a
-              rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
-              <LogoIcon />
-              ShadcnUI/React
-            </a>
+        <a
+          rel="noreferrer noopener"
+          href="/"
+          className="ml-2 font-bold text-xl flex items-center"
+        >
+         <img 
+            src="https://cdn.discordapp.com/attachments/1341687232855146565/1341709124139876422/SemiColonError_3.png?ex=67b7a43e&is=67b652be&hm=dce6281aa273776e03de4cd0f5b2d05271ca65dab9954b0844a6f62ccdab8bdc&" 
+            alt="SemiColonError Logo" 
+            className="h-8 w-8 mr-2 rounded-full shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#8a2be2,0_0_30px_#50c878]"
+         />
+          SemiColonError
+        </a>
           </NavigationMenuItem>
-
           {/* mobile */}
           <span className="flex md:hidden">
             <ModeToggle />
@@ -129,7 +126,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/StardustEnigma/SITNovate"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
